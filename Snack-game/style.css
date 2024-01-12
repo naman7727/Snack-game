@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Roboto:wght@100;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.container{
+     max-width: 100%; 
+     min-height: 100vh;
+    background: url("img/bg.jpg");
+    background-size: 100vw 100vh;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#border{
+    width: 90vmin;
+    height: 92vmin;
+    background: linear-gradient(rgb(179, 179, 186), rgb(232, 232, 238));
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+}
+
+.head{
+    background-color: red;
+    border-radius: 20px;
+}
+.snake{
+    background-color: purple;
+    border-radius: 20px;
+}
+
+.food{font-weight: bold;
+    background-color: yellow;
+   border-radius: 20px;
+}
+#scoreBox{
+     position: absolute;
+     top: 9px;
+     right: 200px;
+     font-size: 39px;
+
+}
